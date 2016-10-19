@@ -65,6 +65,21 @@
 				"description": "TotalCAE License Key"
 			}
 		},
+		"downloadModel": {
+			"defaultValue": "civil.sim.tgz",
+			"allowedValues": [
+				"",
+				"civil.sim.tgz",
+				"LeMans_17M.tgz",
+				"LeMans_100M.tgz",
+				"LeMans_514M.tgz",
+				"VTM_68M.tgz"
+				
+			],
+			"type": "String",
+			"metadata": {
+				"description": "Which benchmark model would you like to download"
+			}
 		}
 	},
 	"variables": {
@@ -243,7 +258,7 @@
 				"autoUpgradeMinorVersion": true,
 				"settings": {
 					"fileUris": "[variables('vmScripts').scriptsToDownload]",
-					"commandToExecute": "[concat('bash ', 'setup.sh ',parameters('adminUsername'),' ',parameters('adminPassword'),' ',parameters('TotalCAEKey')) ]",
+					"commandToExecute": "[concat('bash ', 'hn-setup.sh ',parameters('adminUsername'),' ',parameters('adminPassword'),' ',parameters('PODKey'),' ',parameters('downloadModel')) ]",
 					"timestamp": 4
 				}
 			},
