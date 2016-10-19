@@ -99,8 +99,8 @@
 		"nicName": "[concat(variables('namingInfix'), 'nic')]",
 		"ipConfigName": "[concat(variables('namingInfix'), 'ipconfig')]",
 		"scriptUrl": "https://raw.githubusercontent.com/totalcae/public-cloud/master/",
-		"cnSetupScript": "cn-setup.sh",
-		"hnSetupScript": "hn-setup.sh",
+		"cnSetupScript": "setup.sh",
+		"hnSetupScript": "setup.sh",
 		"osType": {
 			"publisher": "OpenLogic",
 			"offer": "CentOS-HPC",
