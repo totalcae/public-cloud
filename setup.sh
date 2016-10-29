@@ -1,7 +1,10 @@
-USER=$1
-PASS=$2
-KEY=$3
-APP=$4
+export USER=$1
+export PASS=$2
+export KEY=$3
+export APP=$4
+export NODEPREFIX=$5
+export INSTANCE_COUNT=$6
+
 IP=`hostname -i`
 localip=`hostname -i | cut --delimiter='.' -f -3`
 
@@ -11,5 +14,5 @@ cd /srv
 echo ${KEY} |  gpg --batch --output chef-repo.tar --passphrase-fd O  --decrypt chef-repo.tar.gpg
 tar xfv chef-repo.tar
 cd chef-repo
-./setup.sh
+./make-head.sh 
 
