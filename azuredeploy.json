@@ -124,8 +124,8 @@
 		"imageReference": "[variables('osType')]",
 		"vmScripts": {
 			"scriptsToDownload": [
-				"[concat(variables('scriptUrl'), 'setup.sh')]",
-				"[concat(variables('scriptUrl'), 'setup.sh')]"
+				"[concat(variables('scriptUrl'), 'make-head.sh')]",
+				"[concat(variables('scriptUrl'), 'make-node.sh')]"
 			],
 			"commandToExecute": ""
 		},
