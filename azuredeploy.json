@@ -113,8 +113,8 @@
 		"nicName": "[concat(variables('namingInfix'), 'nic')]",
 		"ipConfigName": "[concat(variables('namingInfix'), 'ipconfig')]",
 		"scriptUrl": "https://raw.githubusercontent.com/totalcae/public-cloud/master/",
-		"cnSetupScript": "setup.sh",
-		"hnSetupScript": "setup.sh",
+		"cnSetupScript": "make-node.sh",
+		"hnSetupScript": "make-head.sh",
 		"osType": {
 			"publisher": "OpenLogic",
 			"offer": "CentOS-HPC",
@@ -257,7 +257,7 @@
 				"autoUpgradeMinorVersion": true,
 				"settings": {
 					"fileUris": "[variables('vmScripts').scriptsToDownload]",
-					"commandToExecute": "[concat('bash ', 'setup.sh ',parameters('adminUsername'),' ',parameters('adminPassword'),' ',parameters('TotalCAEKey'),' ',parameters('downloadApplication')) ]",
+					"commandToExecute": "[concat('bash ', 'make-head.sh ',parameters('adminUsername'),' ',parameters('adminPassword'),' ',parameters('TotalCAEKey'),' ',parameters('downloadApplication'), ' ',parameters('vmssName'),' ',parameters('instanceCount')) ]",
 					"timestamp": 4
 				}
 			},
