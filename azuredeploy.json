@@ -256,7 +256,7 @@
 				"autoUpgradeMinorVersion": true,
 				"settings": {
 					"fileUris": "[variables('vmScripts').scriptsToDownload]",
-					"commandToExecute": "[concat('bash ', 'setup.sh ',parameters('adminUsername'),' ',parameters('adminPassword'),' ',parameters('TotalCAEKey'),' ',parameters('downloadApplication'), ' ',parameters('namingInfix'),' ',parameters('instanceCount')) ]",
+					"commandToExecute": "[concat('bash ', 'setup.sh ',parameters('adminUsername'),' ',parameters('adminPassword'),' ',parameters('TotalCAEKey'),' ',parameters('downloadApplication'), ' ',parameters(variables('namingInfix')),' ',parameters('instanceCount')) ]",
 					"timestamp": 4
 				}
 			},
