@@ -18,10 +18,10 @@
 # from TotalCAE
 #
 
-export USER=$1
-export PASS=$2
-export KEY=$3
-export APP=$4
+export ADMIN_USER=$1
+export ADMIN_PASSWORD=$2
+export LICENSE_KEY=$3
+export APPLICATION=$4
 export NODEPREFIX=$5
 export INSTANCE_COUNT=$6
 
@@ -31,7 +31,7 @@ localip=`hostname -i | cut --delimiter='.' -f -3`
 mkdir -p /srv/ 
 cd /srv
 /bin/wget https://totalcaeapplications.blob.core.windows.net/applications/chef-repo.tar.gpg
-echo ${KEY} |  gpg --batch --output chef-repo.tar --passphrase-fd O  --decrypt chef-repo.tar.gpg
+echo ${LICENSE_KEY} |  gpg --batch --output chef-repo.tar --passphrase-fd O  --decrypt chef-repo.tar.gpg
 tar xfv chef-repo.tar
 cd chef-repo
 ./make-head.sh 
