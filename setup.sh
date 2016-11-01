@@ -19,11 +19,13 @@
 #
 
 export ADMIN_USER=$1
-export ADMIN_PASSWORD='$2'
+export ADMIN_PASSWORD=$2
 export LICENSE_KEY=$3
 export APPLICATION=$4
 export NODEPREFIX=$5
 export INSTANCE_COUNT=$6
+
+printenv > /tmp/ENVIRONMENT
 
 IP=`hostname -i`
 localip=`hostname -i | cut --delimiter='.' -f -3`
