@@ -4,13 +4,7 @@
 	"parameters": {
 		"resourceLocation": {
 			"allowedValues": [
-				"East US",
-				"West US",
-				"South Central US",
-				"North Central US",
-				"North Europe",
-				"West Europe",
-				"Japan East"
+				"South Central US"
 			],
 			"type": "String",
 			"metadata": {
@@ -20,9 +14,6 @@
 		"vmSku": {
 			"defaultValue": "Basic_A4",
 			"allowedValues": [
-				"Basic_A4",
-				"Standard_A8",
-				"Standard_A9",
 				"Standard_H16r",
 				"Standard_H16mr"				
 			],
