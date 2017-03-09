@@ -74,7 +74,7 @@
 				"Fluent",
 				"OpenFOAM",
 				"LS-DYNA",
-                                "Optistrict"
+                                "Optistruct"
 			],
 			"type": "String",
 			"metadata": {
