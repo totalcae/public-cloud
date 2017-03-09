@@ -4,8 +4,14 @@
 	"parameters": {
 		"resourceLocation": {
 			"allowedValues": [
-				"South Central US"
-			],
+				"South Central US", 
+			        "East US",
+                                "West US",
+                                "North Central US",
+                                "North Europe",
+                                "West Europe",
+                                "Japan East"
+                         ],
 			"type": "String",
 			"metadata": {
 				"description": "Azure region where all resources will be deployed. This is distinct from resource group location."
@@ -15,7 +21,10 @@
 			"defaultValue": "Basic_A4",
 			"allowedValues": [
 				"Standard_H16r",
-				"Standard_H16mr"				
+				"Standard_H16mr",
+                                "Basic_A4",
+                                "Standard_A8",
+                                "Standard_A9"				
 			],
 			"type": "String",
 			"metadata": {
@@ -64,8 +73,8 @@
 				"Abaqus",
 				"Fluent",
 				"OpenFOAM",
-				"LS-DYNA"
-				
+				"LS-DYNA",
+                                "Optistrict"
 			],
 			"type": "String",
 			"metadata": {
