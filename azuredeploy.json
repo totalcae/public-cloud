@@ -18,7 +18,7 @@
 			}
 		},
 		"vmSku": {
-			"defaultValue": "Basic_A4",
+			"defaultValue": "Standard_H16mr",
 			"allowedValues": [
 				"Standard_H16r",
 				"Standard_H16mr",
