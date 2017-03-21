@@ -22,9 +22,10 @@
 			"allowedValues": [
 				"Standard_H16r",
 				"Standard_H16mr",
-                                "Basic_A4",
                                 "Standard_A8",
-                                "Standard_A9"				
+                                "Standard_A9",
+				"Standard_A10",
+				"Standard_A11"
 			],
 			"type": "String",
 			"metadata": {
