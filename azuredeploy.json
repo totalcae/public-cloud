@@ -70,12 +70,13 @@
 			"defaultValue": "STAR-CCM+",
 			"allowedValues": [
 				"",
-				"STAR-CCM+",
-				"Abaqus",
-				"Fluent",
-				"OpenFOAM",
-				"LS-DYNA",
-                                "Optistruct"
+				"star-ccm+",
+				"abaqus",
+				"fluent",
+				"openfoam",
+				"ls-dyna",
+                                "optistruct",
+				"comsol"
 			],
 			"type": "String",
 			"metadata": {
