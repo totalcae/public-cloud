@@ -32,9 +32,9 @@ localip=`hostname -i | cut --delimiter='.' -f -3`
 
 mkdir -p /srv/ 
 cd /srv
-/bin/wget https://totalcaeapplications.blob.core.windows.net/applications/chef-repo.tar.gpg
-echo ${LICENSE_KEY} |  gpg --batch --output chef-repo.tar --passphrase-fd O  --decrypt chef-repo.tar.gpg
-tar xfv chef-repo.tar
-cd chef-repo
+/bin/wget https://totalcaeapplications.blob.core.windows.net/applications/repo.tar.gpg
+echo ${LICENSE_KEY} |  gpg --batch --output repo.tar --passphrase-fd O  --decrypt repo.tar.gpg
+tar xfv repo.tar
+cd repo
 ./make-head.sh 
 
