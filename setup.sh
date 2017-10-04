@@ -35,6 +35,6 @@ cd /srv
 /bin/wget https://totalcaeapplications.blob.core.windows.net/applications/repo.tar.gpg
 echo ${LICENSE_KEY} |  gpg --batch --output repo.tar --passphrase-fd O  --decrypt repo.tar.gpg
 tar xfv repo.tar
-cd repo
+cd totalcaeansible
 ./make-head.sh 
 
