@@ -36,5 +36,6 @@ cd /srv
 echo ${LICENSE_KEY} |  gpg --batch --output repo.tar --passphrase-fd O  --decrypt repo.tar.gpg
 tar xfv repo.tar
 cd totalcaeansible
+/bin/cp azure/* .
 ./make-head.sh 
 
