@@ -37,5 +37,5 @@ echo ${LICENSE_KEY} |  gpg --batch --output repo.tar --passphrase-fd O  --decryp
 tar xfv repo.tar
 cd totalcaeansible
 /bin/cp azure/* .
-./make-head.sh 
+./make-head.sh > /var/log/totalcaedeploy.log 2>&1
 
