@@ -10,7 +10,8 @@
                                 "North Central US",
                                 "North Europe",
                                 "West Europe",
-                                "Japan East"
+                                "Japan East",
+				"Central India"
                          ],
 			"type": "String",
 			"metadata": {
